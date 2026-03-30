@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JLH Patrimoine — Checklist LMNP 2025</title>
+<meta name="description" content="Préparez votre déclaration LMNP 2025 avec JLH Patrimoine. Identifiez vos documents en quelques minutes."/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="theme-color" content="#142B45"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:#142B45;--navy-light:#1C3A5A;--gold:#92A6BB;--gold-light:#ADC0D1;
+    --gold-pale:#E8EEF4;--cream:#F3F6F9;--white:#FFFFFF;--text:#142B45;
+    --text-mid:#4A6070;--text-light:#7A92A6;--border:#D0DCE6;
+    --green:#2E7D5B;--green-pale:#EAF5EF;--red:#C0392B;--red-pale:#FDECEA;
+    --shadow:0 4px 24px rgba(20,43,69,0.08);--shadow-lg:0 8px 40px rgba(20,43,69,0.12);--radius:12px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.6;min-height:100vh;}
+  .header{background:var(--navy);padding:0;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,0.2);}
+  .header-inner{max-width:1100px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;}
+  .logo-area{display:flex;align-items:center;gap:14px;}
+  .logo-divider{width:1px;height:28px;background:rgba(255,255,255,0.2);margin:0 14px;}
+  .header-badge{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);font-weight:300;}
+  .header-year{background:var(--gold);color:var(--navy);font-size:11px;font-weight:500;letter-spacing:0.08em;padding:5px 14px;border-radius:20px;text-transform:uppercase;}
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,#1C3A5A 60%,#142B45 100%);padding:64px 32px 56px;text-align:center;position:relative;overflow:hidden;}
+  .hero::before{content:'';position:absolute;top:-40%;left:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(146,166,187,0.12) 0%,transparent 70%);pointer-events:none;}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,52px);font-weight:400;line-height:1.2;color:var(--white);margin-bottom:12px;position:relative;z-index:1;}
+  .hero h1 em{font-style:italic;color:var(--gold-light);}
+  .hero-sub{font-size:15px;color:rgba(255,255,255,0.65);max-width:540px;margin:0 auto 36px;font-weight:300;line-height:1.7;position:relative;z-index:1;}
+  .progress-card{background:rgba(255,255,255,0.05);border:1px solid rgba(146,166,187,0.2);border-radius:var(--radius);padding:24px 32px;max-width:620px;margin:0 auto;position:relative;z-index:1;}
+  .progress-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:12px;flex-wrap:wrap;}
+  .progress-stat{text-align:center;}
+  .progress-stat .num{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;color:var(--white);line-height:1;}
+  .progress-stat .num.green{color:#5DD89A;}
+  .progress-stat .num.red{color:#FF7B6B;}
+  .progress-stat .lbl{font-size:10px;color:rgba(255,255,255,0.45);letter-spacing:0.08em;text-transform:uppercase;margin-top:4px;}
+  .progress-divider{width:1px;height:36px;background:rgba(255,255,255,0.1);}
+  .progress-bar-track{background:rgba(255,255,255,0.1);border-radius:4px;height:6px;overflow:hidden;margin-top:4px;}
+  .progress-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width 0.6s cubic-bezier(0.4,0,0.2,1);}
+  .progress-pct{font-size:12px;color:var(--gold-light);text-align:right;margin-top:6px;font-weight:500;}
+  .intro{max-width:720px;margin:40px auto 0;padding:32px 40px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);border-left:4px solid var(--gold);}
+  .intro-title{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;color:var(--navy);margin-bottom:10px;}
+  .intro p{font-size:14px;color:var(--text-mid);line-height:1.75;}
+  .intro p+p{margin-top:8px;}
+  .intro strong{color:var(--navy);font-weight:500;}
+  .main{max-width:1100px;margin:0 auto;padding:48px 32px 80px;}
+  .section-label{display:flex;align-items:center;gap:12px;margin-bottom:16px;margin-top:40px;}
+  .section-label:first-child{margin-top:0;}
+  .section-icon{width:40px;height:40px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .section-icon svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.8;}
+  .section-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--navy);}
+  .section-count{margin-left:auto;font-size:12px;color:var(--text-light);background:var(--cream);border:1px solid var(--border);padding:3px 12px;border-radius:20px;white-space:nowrap;}
+  .cat-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:10px;overflow:hidden;border:1px solid var(--border);transition:box-shadow 0.2s;}
+  .cat-card:hover{box-shadow:var(--shadow-lg);}
+  .cat-header{display:flex;align-items:center;gap:12px;padding:15px 20px;cursor:pointer;user-select:none;border-bottom:1px solid var(--border);}
+  .cat-name{font-weight:500;font-size:14px;color:var(--navy);flex:1;}
+  .cat-mini-progress{display:flex;align-items:center;gap:8px;}
+  .cat-mini-bar{width:55px;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+  .cat-mini-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transition:width 0.4s;width:0%;}
+  .cat-mini-pct{font-size:11px;color:var(--text-light);}
+  .cat-chevron{width:18px;height:18px;color:var(--text-light);transition:transform 0.3s;flex-shrink:0;}
+  .cat-chevron.open{transform:rotate(180deg);}
+  .cat-body{padding:6px 0;}
+  .cat-body.closed{display:none;}
+  .item-row{display:flex;align-items:flex-start;gap:12px;padding:10px 20px;border-bottom:1px solid var(--cream);transition:background 0.15s;}
+  .item-row:last-child{border-bottom:none;}
+  .item-row:hover{background:var(--cream);}
+  .item-check-area{display:flex;flex-direction:column;gap:5px;flex-shrink:0;padding-top:2px;}
+  .check-btn{display:flex;align-items:center;gap:6px;cursor:pointer;font-size:12px;font-weight:400;color:var(--text-mid);background:none;border:none;padding:0;white-space:nowrap;transition:color 0.15s;}
+  .check-btn:hover{color:var(--navy);}
+  .check-box{width:18px;height:18px;border-radius:5px;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.15s;background:var(--white);}
+  .check-btn.active-have .check-box{background:var(--green);border-color:var(--green);}
+  .check-btn.active-missing .check-box{background:var(--red);border-color:var(--red);}
+  .check-box svg{width:11px;height:11px;stroke:white;stroke-width:2.5;fill:none;display:none;}
+  .check-btn.active-have .check-box svg,.check-btn.active-missing .check-box svg{display:block;}
+  .item-content{flex:1;min-width:0;}
+  .item-name{font-size:14px;color:var(--text);line-height:1.5;}
+  .item-source{font-size:11px;color:var(--text-light);font-style:italic;margin-top:2px;}
+  .item-status{display:inline-flex;align-items:center;gap:5px;font-size:11px;padding:3px 10px;border-radius:10px;margin-top:5px;font-weight:500;}
+  .item-status.have{background:var(--green-pale);color:var(--green);}
+  .item-status.missing{background:var(--red-pale);color:var(--red);}
+  .item-status.none{display:none;}
+  .comment-toggle{font-size:11px;color:var(--gold);cursor:pointer;background:none;border:none;padding:0;display:flex;align-items:center;gap:4px;font-weight:400;margin-top:5px;}
+  .comment-toggle:hover{color:var(--gold-light);}
+  .comment-input{margin-top:5px;width:100%;border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:13px;color:var(--text);font-family:'DM Sans',sans-serif;resize:none;background:var(--cream);outline:none;transition:border-color 0.2s;min-height:56px;display:none;}
+  .comment-input:focus{border-color:var(--gold);}
+  .action-bar{position:sticky;bottom:0;background:var(--white);border-top:1px solid var(--border);padding:14px 32px;z-index:50;box-shadow:0 -4px 20px rgba(20,43,69,0.08);}
+  .action-bar-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;border:none;transition:all 0.2s;white-space:nowrap;}
+  .btn svg{width:14px;height:14px;flex-shrink:0;}
+  .btn-primary{background:var(--navy);color:var(--white);box-shadow:0 2px 8px rgba(20,43,69,0.25);}
+  .btn-primary:hover{background:var(--navy-light);transform:translateY(-1px);}
+  .btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 2px 8px rgba(146,166,187,0.3);}
+  .btn-gold:hover{background:var(--gold-light);transform:translateY(-1px);}
+  .btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--border);}
+  .btn-outline:hover{border-color:var(--navy);background:var(--cream);}
+  .missing-panel{max-width:720px;margin:28px auto 0;background:var(--red-pale);border:1px solid #F5BCBA;border-radius:var(--radius);padding:22px 26px;display:none;}
+  .missing-panel h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:500;color:var(--red);margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+  .missing-list{list-style:none;}
+  .missing-list li{display:flex;align-items:flex-start;gap:8px;padding:5px 0;border-bottom:1px solid rgba(192,57,43,0.1);font-size:13px;color:#8B1A1A;}
+  .missing-list li:last-child{border-bottom:none;}
+  .missing-list li::before{content:'';display:block;min-width:6px;height:6px;background:var(--red);border-radius:50%;margin-top:6px;}
+  .missing-cat{font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--red);opacity:0.6;margin-left:auto;white-space:nowrap;}
+  .success-panel{max-width:720px;margin:28px auto 0;background:var(--green-pale);border:1px solid #9ED8BC;border-radius:var(--radius);padding:22px 26px;display:none;text-align:center;}
+  .success-panel h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green);margin-bottom:8px;}
+  .success-panel p{font-size:14px;color:#2E6050;}
+  .footer{background:var(--navy);padding:36px 32px;text-align:center;}
+  .footer-info{font-size:12px;color:rgba(255,255,255,0.35);line-height:1.8;}
+  @media(max-width:900px){.main{padding:36px 20px 80px;}.cat-mini-progress{display:none;}.section-title{font-size:19px;}}
+  @media(max-width:640px){
+    .header-inner{padding:12px 16px;}.header-badge{display:none;}.logo-divider{display:none;}
+    .header-year{font-size:10px;padding:4px 10px;}.hero{padding:36px 16px 32px;}
+    .hero h1{font-size:clamp(26px,7vw,36px);}.hero-sub{font-size:13px;margin-bottom:24px;}
+    .progress-card{padding:16px;}.progress-stat .num{font-size:26px;}.progress-stat .lbl{font-size:9px;}
+    .main{padding:20px 12px 100px;}.intro{margin:20px 12px 0;padding:18px 16px;}
+    .intro-title{font-size:17px;}.section-label{margin-top:28px;}.section-title{font-size:17px;}
+    .section-icon{width:32px;height:32px;}.cat-header{padding:12px 14px;}.cat-name{font-size:13px;}
+    .cat-mini-progress{display:none;}.item-row{padding:10px 12px;gap:8px;flex-wrap:wrap;}
+    .item-check-area{flex-direction:row;width:100%;gap:6px;}
+    .check-btn{font-size:11px;padding:5px 8px;border-radius:6px;background:var(--cream);border:1px solid var(--border);}
+    .check-btn.active-have{background:var(--green-pale);color:var(--green);}
+    .check-btn.active-missing{background:var(--red-pale);color:var(--red);}
+    .item-content{width:100%;}.item-name{font-size:13px;}
+    .action-bar{padding:10px 12px;}.action-bar-inner{justify-content:center;gap:8px;}
+    .btn{padding:9px 12px;font-size:12px;}.footer{padding:24px 16px;}.footer-info{font-size:11px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="data:image/jpeg;base64,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" alt="JLH Patrimoine" style="height:38px;display:block;">
+      <div class="logo-divider"></div>
+      <div class="header-badge">Aide documentaire</div>
+    </div>
+    <div class="header-year">Déclaration d'impôts 2026</div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Checklist <em>LMNP 2025</em></h1>
+  <p class="hero-sub">Préparez votre déclaration de revenus en location meublée non professionnelle (LMNP).</p>
+  <div class="progress-card">
+    <div class="progress-row">
+      <div class="progress-stat"><div class="num" id="total-count">0</div><div class="lbl">Documents</div></div>
+      <div class="progress-divider"></div>
+      <div class="progress-stat"><div class="num green" id="have-count">0</div><div class="lbl">Prêts</div></div>
+      <div class="progress-divider"></div>
+      <div class="progress-stat"><div class="num red" id="missing-count">0</div><div class="lbl">À retrouver</div></div>
+      <div class="progress-divider"></div>
+      <div class="progress-stat"><div class="num" id="pending-count">0</div><div class="lbl">Non renseignés</div></div>
+    </div>
+    <div class="progress-bar-track"><div class="progress-bar-fill" id="progress-fill" style="width:0%"></div></div>
+    <div class="progress-pct" id="progress-pct">0% renseigné</div>
+  </div>
+</section>
+
+<div style="max-width:720px;margin:0 auto;padding:0 32px;">
+  <div class="intro">
+    <div class="intro-title">Comment utiliser cette checklist* ?</div>
+    <p>Cette page a été conçue pour vous aider à préparer sereinement la déclaration fiscale de votre LMNP. Parcourez chaque catégorie et indiquez simplement si vous possédez déjà le document ou s'il reste à retrouver.</p>
+    <p>Une fois terminé, <strong>imprimez votre récapitulatif</strong> pour l'avoir sous la main.</p>
+    <p><strong>Ces documents sont à déposer dans votre coffre fort sécurisé via votre espace Wealthcome dans le dossier « Déclaration LMNP ».</strong></p>
+    <p style="font-size:11px;color:var(--text-light);margin-top:12px;font-style:italic;">* Liste non exhaustive</p>
+  </div>
+</div>
+
+<div id="missing-panel" class="missing-panel" style="max-width:720px;margin:28px auto 0;">
+  <h3>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    Documents à retrouver
+  </h3>
+  <ul class="missing-list" id="missing-list"></ul>
+</div>
+
+<div id="success-panel" class="success-panel" style="max-width:720px;margin:28px auto 0;">
+  <h3>Préparation validée ✓</h3>
+  <p>Votre checklist a été sauvegardée. Imprimez votre récapitulatif pour votre rendez-vous avec JLH PATRIMOINE.</p>
+</div>
+
+<main class="main">
+
+  <!-- ===== NOUVEAU BIEN ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+    <div class="section-title">Nouveau bien en location meublée</div>
+    <div class="section-count">3 pièces</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Documents pour un nouveau bien acquis en 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-nvbien"></div></div><span class="cat-mini-pct" id="mpct-nvbien">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-nb1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-nb1" onclick="toggleStatus('nb1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-nb1" onclick="toggleStatus('nb1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Attestation notariée (ou acte authentique) du nouveau bien</div>
+          <div class="item-source">Source : Notaire</div>
+          <div class="item-status none" id="status-nb1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('nb1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-nb1" placeholder="Note ou précision…" oninput="saveComment('nb1',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-nb2">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-nb2" onclick="toggleStatus('nb2','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-nb2" onclick="toggleStatus('nb2','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Avis de valeur réalisé par un professionnel de l'immobilier</div>
+          <div class="item-source">Source : Agent immobilier</div>
+          <div class="item-status none" id="status-nb2"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('nb2')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-nb2" placeholder="Note ou précision…" oninput="saveComment('nb2',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-nb3">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-nb3" onclick="toggleStatus('nb3','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-nb3" onclick="toggleStatus('nb3','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Premier bail de location meublée</div>
+          <div class="item-source">Source : Gestionnaire locatif / propriétaire</div>
+          <div class="item-status none" id="status-nb3"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('nb3')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-nb3" placeholder="Note ou précision…" oninput="saveComment('nb3',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LOCATAIRES & LOYERS ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+    <div class="section-title">Locataires &amp; Loyers</div>
+    <div class="section-count">3 pièces</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Baux et revenus locatifs 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-loyers"></div></div><span class="cat-mini-pct" id="mpct-loyers">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-l1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-l1" onclick="toggleStatus('l1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-l1" onclick="toggleStatus('l1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Baux de location de chacun des locataires présents en 2025</div>
+          <div class="item-source">Source : Gestionnaire locatif / propriétaire</div>
+          <div class="item-status none" id="status-l1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('l1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-l1" placeholder="Note ou précision…" oninput="saveComment('l1',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-l2">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-l2" onclick="toggleStatus('l2','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-l2" onclick="toggleStatus('l2','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Comptes-rendus de gestion 2025 — 12 mensuels ou 4 trimestriels (si société de gestion)</div>
+          <div class="item-source">Source : Société de gestion</div>
+          <div class="item-status none" id="status-l2"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('l2')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-l2" placeholder="Note ou précision…" oninput="saveComment('l2',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-l3">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-l3" onclick="toggleStatus('l3','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-l3" onclick="toggleStatus('l3','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Tableau récapitulatif des sommes encaissées en 2025 (si gestion directe)</div>
+          <div class="item-source">Source : Propriétaire</div>
+          <div class="item-status none" id="status-l3"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('l3')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-l3" placeholder="Note ou précision…" oninput="saveComment('l3',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ASSURANCE PNO ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div class="section-title">Assurance PNO / Propriétaire Bailleur</div>
+    <div class="section-count">1 pièce</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Avis d'échéance d'assurance 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-assur"></div></div><span class="cat-mini-pct" id="mpct-assur">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-a1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-a1" onclick="toggleStatus('a1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-a1" onclick="toggleStatus('a1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Avis d'échéance(s) d'assurance PNO ou Propriétaire Bailleur couvrant l'intégralité de l'année 2025 (période couverte + montant)</div>
+          <div class="item-source">Source : Assureur</div>
+          <div class="item-status none" id="status-a1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('a1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-a1" placeholder="Note ou précision…" oninput="saveComment('a1',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TAXE FONCIÈRE ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+    <div class="section-title">Taxe foncière</div>
+    <div class="section-count">1 pièce</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Taxe foncière 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-tf"></div></div><span class="cat-mini-pct" id="mpct-tf">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-tf1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-tf1" onclick="toggleStatus('tf1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-tf1" onclick="toggleStatus('tf1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Taxe foncière 2025</div>
+          <div class="item-source">Source : Impôts.gouv.fr</div>
+          <div class="item-status none" id="status-tf1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('tf1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-tf1" placeholder="Note ou précision…" oninput="saveComment('tf1',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CGA ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+    <div class="section-title">Centre de Gestion Agréé (CGA)</div>
+    <div class="section-count">1 pièce</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Facture d'honoraires CGA 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-cga"></div></div><span class="cat-mini-pct" id="mpct-cga">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-cga1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-cga1" onclick="toggleStatus('cga1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-cga1" onclick="toggleStatus('cga1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Facture des honoraires CGA 2025 (Enorga, OGI France ou autres)</div>
+          <div class="item-source">Source : CGA</div>
+          <div class="item-status none" id="status-cga1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('cga1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-cga1" placeholder="Note ou précision…" oninput="saveComment('cga1',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SYNDIC ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 21V12h6v9"/><path d="M3 9h18"/></svg></div>
+    <div class="section-title">Syndic de copropriété</div>
+    <div class="section-count">5 pièces</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Espace en ligne (si disponible)</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-syndic1"></div></div><span class="cat-mini-pct" id="mpct-syndic1">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-s1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-s1" onclick="toggleStatus('s1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-s1" onclick="toggleStatus('s1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Lien internet vers l'espace en ligne du syndic</div>
+          <div class="item-source">Source : Syndic de copropriété</div>
+          <div class="item-status none" id="status-s1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('s1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-s1" placeholder="Note ou précision…" oninput="saveComment('s1',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-s2">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-s2" onclick="toggleStatus('s2','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-s2" onclick="toggleStatus('s2','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Identifiant de l'espace en ligne syndic</div>
+          <div class="item-source">Source : Syndic de copropriété</div>
+          <div class="item-status none" id="status-s2"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('s2')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-s2" placeholder="Note ou précision…" oninput="saveComment('s2',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-s3">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-s3" onclick="toggleStatus('s3','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-s3" onclick="toggleStatus('s3','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Mot de passe de l'espace en ligne syndic</div>
+          <div class="item-source">Source : Syndic de copropriété</div>
+          <div class="item-status none" id="status-s3"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('s3')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-s3" placeholder="Note ou précision…" oninput="saveComment('s3',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Sans espace en ligne — documents papier 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-syndic2"></div></div><span class="cat-mini-pct" id="mpct-syndic2">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-s4">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-s4" onclick="toggleStatus('s4','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-s4" onclick="toggleStatus('s4','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">4 appels de fonds trimestriels 2025</div>
+          <div class="item-source">Source : Syndic de copropriété</div>
+          <div class="item-status none" id="status-s4"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('s4')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-s4" placeholder="Note ou précision…" oninput="saveComment('s4',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-s5">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-s5" onclick="toggleStatus('s5','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-s5" onclick="toggleStatus('s5','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Régularisation de charges (apurement) réalisée en 2025</div>
+          <div class="item-source">Source : Syndic de copropriété</div>
+          <div class="item-status none" id="status-s5"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('s5')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-s5" placeholder="Note ou précision…" oninput="saveComment('s5',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-s6">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-s6" onclick="toggleStatus('s6','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-s6" onclick="toggleStatus('s6','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Appels de fonds travaux éventuels 2025</div>
+          <div class="item-source">Source : Syndic de copropriété</div>
+          <div class="item-status none" id="status-s6"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('s6')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-s6" placeholder="Note ou précision…" oninput="saveComment('s6',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AUTRES FACTURES ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+    <div class="section-title">Autres factures &amp; dépenses</div>
+    <div class="section-count">1 pièce</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Factures diverses liées à la location 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-fact"></div></div><span class="cat-mini-pct" id="mpct-fact">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-f1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-f1" onclick="toggleStatus('f1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-f1" onclick="toggleStatus('f1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Factures diverses liées à la location 2025 : mobilier, internet, électricité, travaux, entretien, réparation…</div>
+          <div class="item-source">Source : Fournisseurs / prestataires</div>
+          <div class="item-status none" id="status-f1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('f1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-f1" placeholder="Note ou précision…" oninput="saveComment('f1',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EMPRUNTS ===== -->
+  <div class="section-label">
+    <div class="section-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+    <div class="section-title">Emprunts</div>
+    <div class="section-count">4 pièces</div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Attestations fiscales et assurances 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-emp1"></div></div><span class="cat-mini-pct" id="mpct-emp1">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-e1">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-e1" onclick="toggleStatus('e1','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-e1" onclick="toggleStatus('e1','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Attestation fiscale 2025 de votre banque récapitulant les intérêts et assurances versés (pour chaque emprunt)</div>
+          <div class="item-source">Source : Banque</div>
+          <div class="item-status none" id="status-e1"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('e1')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-e1" placeholder="Note ou précision…" oninput="saveComment('e1',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-e2">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-e2" onclick="toggleStatus('e2','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-e2" onclick="toggleStatus('e2','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Attestation de cotisation d'assurance emprunteur 2025 si souscrite hors banque</div>
+          <div class="item-source">Source : Assureur</div>
+          <div class="item-status none" id="status-e2"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('e2')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-e2" placeholder="Note ou précision…" oninput="saveComment('e2',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cat-card">
+    <div class="cat-header" onclick="toggleCard(this)">
+      <div class="cat-name">Nouvel emprunt / rachat / modification intervenu en 2025</div>
+      <div class="cat-mini-progress"><div class="cat-mini-bar"><div class="cat-mini-bar-fill" id="mini-emp2"></div></div><span class="cat-mini-pct" id="mpct-emp2">0%</span></div>
+      <div class="cat-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+    </div>
+    <div class="cat-body closed">
+      <div class="item-row" id="row-e3">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-e3" onclick="toggleStatus('e3','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-e3" onclick="toggleStatus('e3','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Offre de prêt (première année uniquement)</div>
+          <div class="item-source">Source : Banque</div>
+          <div class="item-status none" id="status-e3"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('e3')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-e3" placeholder="Note ou précision…" oninput="saveComment('e3',this.value)"></textarea>
+        </div>
+      </div>
+      <div class="item-row" id="row-e4">
+        <div class="item-check-area">
+          <button type="button" class="check-btn" id="have-e4" onclick="toggleStatus('e4','have')"><div class="check-box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><span>J'ai ce document</span></button>
+          <button type="button" class="check-btn" id="missing-e4" onclick="toggleStatus('e4','missing')"><div class="check-box"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><span>À retrouver</span></button>
+        </div>
+        <div class="item-content">
+          <div class="item-name">Tableau d'amortissement</div>
+          <div class="item-source">Source : Banque</div>
+          <div class="item-status none" id="status-e4"></div>
+          <button type="button" class="comment-toggle" onclick="toggleComment('e4')">+ Ajouter un commentaire</button>
+          <textarea class="comment-input" id="comment-e4" placeholder="Note ou précision…" oninput="saveComment('e4',this.value)"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<div class="action-bar">
+  <div class="action-bar-inner">
+    <button type="button" class="btn btn-outline" onclick="toggleMissing()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Voir les pièces manquantes
+    </button>
+    <button type="button" class="btn btn-primary" onclick="validatePrep()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Valider ma préparation
+    </button>
+    <button type="button" class="btn btn-gold" onclick="generatePDF()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 17V3M5 10l7 7 7-7"/><path d="M5 21h14"/></svg>
+      Imprimer / Enregistrer en PDF
+    </button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-info">
+    19 boulevard Malesherbes — 75008 Paris · www.jlhpatrimoine.com<br>
+    SAS au capital de 10.000 € · RCS Paris 921 786 000 · NAF : 70.22Z<br>
+    Membre de la CNCGP · Conseiller en Investissements Financiers N°23001841
+  </div>
+</footer>
+
+<script>
+const ALL_IDS = ['nb1','nb2','nb3','l1','l2','l3','a1','tf1','cga1','s1','s2','s3','s4','s5','s6','f1','e1','e2','e3','e4'];
+const CAT_LABELS = {
+  nb1:'Nouveau bien',nb2:'Nouveau bien',nb3:'Nouveau bien',
+  l1:'Locataires & Loyers',l2:'Locataires & Loyers',l3:'Locataires & Loyers',
+  a1:'Assurance PNO',tf1:'Taxe foncière',cga1:'CGA',
+  s1:'Syndic',s2:'Syndic',s3:'Syndic',s4:'Syndic',s5:'Syndic',s6:'Syndic',
+  f1:'Autres factures',e1:'Emprunts',e2:'Emprunts',e3:'Emprunts',e4:'Emprunts'
+};
+const MINI_GROUPS = {
+  nvbien:['nb1','nb2','nb3'], loyers:['l1','l2','l3'], assur:['a1'],
+  tf:['tf1'], cga:['cga1'], syndic1:['s1','s2','s3'], syndic2:['s4','s5','s6'],
+  fact:['f1'], emp1:['e1','e2'], emp2:['e3','e4']
+};
+const state = {};
+ALL_IDS.forEach(id => state[id] = {status:null, comment:''});
+
+function toggleCard(hdr) {
+  const body = hdr.nextElementSibling;
+  const chevron = hdr.querySelector('.cat-chevron');
+  const isOpen = !body.classList.contains('closed');
+  body.classList.toggle('closed', isOpen);
+  chevron.classList.toggle('open', !isOpen);
+}
+function toggleStatus(id, status) {
+  state[id].status = state[id].status === status ? null : status;
+  updateRowUI(id); updateStats(); saveState();
+}
+function updateRowUI(id) {
+  const s = state[id].status;
+  document.getElementById('have-'+id).className = 'check-btn'+(s==='have'?' active-have':'');
+  document.getElementById('missing-'+id).className = 'check-btn'+(s==='missing'?' active-missing':'');
+  const st = document.getElementById('status-'+id);
+  if(s==='have'){st.className='item-status have';st.textContent='✓ Document prêt';}
+  else if(s==='missing'){st.className='item-status missing';st.textContent='✗ À retrouver';}
+  else{st.className='item-status none';st.textContent='';}
+}
+function toggleComment(id) {
+  const ta = document.getElementById('comment-'+id);
+  ta.style.display = ta.style.display==='block'?'none':'block';
+  if(ta.style.display==='block') ta.focus();
+}
+function saveComment(id,val){state[id].comment=val;saveState();}
+function updateStats() {
+  const total=ALL_IDS.length;
+  const have=ALL_IDS.filter(id=>state[id].status==='have').length;
+  const missing=ALL_IDS.filter(id=>state[id].status==='missing').length;
+  const pct=Math.round(((have+missing)/total)*100);
+  document.getElementById('total-count').textContent=total;
+  document.getElementById('have-count').textContent=have;
+  document.getElementById('missing-count').textContent=missing;
+  document.getElementById('pending-count').textContent=total-have-missing;
+  document.getElementById('progress-fill').style.width=pct+'%';
+  document.getElementById('progress-pct').textContent=pct+'% renseigné';
+  Object.entries(MINI_GROUPS).forEach(([key,ids])=>{
+    const done=ids.filter(id=>state[id].status!==null).length;
+    const p=Math.round((done/ids.length)*100);
+    const bar=document.getElementById('mini-'+key);
+    const lbl=document.getElementById('mpct-'+key);
+    if(bar) bar.style.width=p+'%';
+    if(lbl) lbl.textContent=p+'%';
+  });
+}
+function saveState(){try{localStorage.setItem('jlhLMNP2025',JSON.stringify(state));}catch(e){}}
+function loadState(){
+  try{
+    const raw=localStorage.getItem('jlhLMNP2025');
+    if(!raw) return;
+    const saved=JSON.parse(raw);
+    ALL_IDS.forEach(id=>{
+      if(saved[id]){state[id].status=saved[id].status??null;state[id].comment=saved[id].comment??'';}
+    });
+    ALL_IDS.forEach(id=>{
+      updateRowUI(id);
+      if(state[id].comment){const ta=document.getElementById('comment-'+id);if(ta)ta.value=state[id].comment;}
+    });
+    updateStats();
+  }catch(e){}
+}
+let missingVisible=false;
+function toggleMissing(){
+  const panel=document.getElementById('missing-panel');
+  const list=document.getElementById('missing-list');
+  const missingItems=ALL_IDS.filter(id=>state[id].status==='missing');
+  list.innerHTML='';
+  if(!missingItems.length){
+    const li=document.createElement('li');li.textContent='Aucune pièce manquante.';
+    li.style.color='var(--green)';li.style.fontStyle='italic';list.appendChild(li);
+  } else {
+    missingItems.forEach(id=>{
+      const li=document.createElement('li');
+      const name=document.querySelector('#row-'+id+' .item-name')?.textContent||id;
+      li.innerHTML='<span style="flex:1">'+name+'</span><span class="missing-cat">'+CAT_LABELS[id]+'</span>';
+      list.appendChild(li);
+    });
+  }
+  missingVisible=!missingVisible;
+  panel.style.display=missingVisible?'block':'none';
+  if(missingVisible) panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function validatePrep(){
+  const answered=ALL_IDS.filter(id=>state[id].status!==null).length;
+  if(!answered){alert('Veuillez au moins renseigner une pièce avant de valider.');return;}
+  const panel=document.getElementById('success-panel');
+  panel.style.display='block';panel.scrollIntoView({behavior:'smooth',block:'nearest'});saveState();
+}
+function escapeHtml(str){return String(str||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+function generatePDF(){
+  const haveItems=ALL_IDS.filter(id=>state[id].status==='have');
+  const missingItems=ALL_IDS.filter(id=>state[id].status==='missing');
+  const today=new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'});
+  const getName=id=>document.querySelector('#row-'+id+' .item-name')?.textContent||id;
+  const getSource=id=>{const s=document.querySelector('#row-'+id+' .item-source');return s?s.textContent.replace('Source : ',''):'';}
+  const renderList=(ids,emptyText)=>{
+    if(!ids.length) return '<p style="color:#6b7686;font-style:italic">'+emptyText+'</p>';
+    return '<ul>'+ids.map(id=>`<li><div><strong>${escapeHtml(getName(id))}</strong><div style="color:#6b7686;font-size:11px;margin-top:2px">${escapeHtml(CAT_LABELS[id])}${getSource(id)?' · '+escapeHtml(getSource(id)):''}</div>${state[id].comment?'<div style="background:#E8EEF4;padding:4px 8px;border-radius:4px;font-size:11px;margin-top:4px">'+escapeHtml(state[id].comment)+'</div>':''}</div></li>`).join('')+'</ul>';
+  };
+  const html=`<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>Checklist LMNP 2025 — JLH Patrimoine</title>
+  <style>*{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:0;color:#142B45}.page{padding:20mm 16mm}.hdr{background:#142B45;color:white;padding:12mm 16mm;margin:-20mm -16mm 10mm}.brand{font-size:22px;font-weight:700}.brand span{color:#92A6BB}.sub{font-size:11px;color:#ADC0D1;text-transform:uppercase;letter-spacing:.1em;margin-top:4px}h1{font-size:20px;margin:0 0 4px}.muted{color:#6b7686;font-size:12px;margin-bottom:12px}.stats{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}.stat{border:1px solid #D0DCE6;border-radius:8px;padding:8px 12px;min-width:100px;background:#F3F6F9}.stat .n{font-size:18px;font-weight:700}.green .n{color:#2E7D5B}.red .n{color:#C0392B}.sec{margin-top:16px}.sec h2{background:#142B45;color:white;font-size:13px;padding:6px 10px;border-radius:6px;margin:0 0 8px}ul{list-style:none;padding:0;margin:0}li{border-bottom:1px solid #D8E4ED;padding:6px 0}li:last-child{border-bottom:none}.ftr{margin-top:16px;padding-top:8px;border-top:1px solid #D0DCE6;color:#6b7686;font-size:10px}@media print{.page{padding-top:16mm}}</style></head>
+  <body><div class="page"><div class="hdr"><div class="brand"><span>JLH</span> PATRIMOINE</div><div class="sub">Checklist LMNP — Déclaration fiscale 2025</div></div>
+  <h1>Documents LMNP</h1><div class="muted">Édité le ${escapeHtml(today)}</div>
+  <div class="stats"><div class="stat"><div class="n">${ALL_IDS.length}</div><div>Total</div></div><div class="stat green"><div class="n">${haveItems.length}</div><div>Prêts</div></div><div class="stat red"><div class="n">${missingItems.length}</div><div>Manquants</div></div></div>
+  <div class="sec"><h2>✓ Documents identifiés</h2>${renderList(haveItems,'Aucune pièce marquée comme prête.')}</div>
+  <div class="sec"><h2>✗ Pièces à retrouver</h2>${renderList(missingItems,'Aucune pièce manquante.')}</div>
+  <div class="ftr">JLH Patrimoine · 19 boulevard Malesherbes, 75008 Paris · www.jlhpatrimoine.com</div></div>
+  <script>window.onload=()=>{setTimeout(()=>window.print(),300);}<\/script></body></html>`;
+  const blob=new Blob([html],{type:'text/html;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  const w=window.open(url,'_blank');
+  if(!w){const iframe=document.createElement('iframe');iframe.style.cssText='position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;';iframe.src=url;document.body.appendChild(iframe);iframe.onload=()=>{try{iframe.contentWindow.print();}catch(e){}setTimeout(()=>{document.body.removeChild(iframe);URL.revokeObjectURL(url);},2000);};}
+}
+loadState();
+updateStats();
+</script>
+</body>
+</html>
